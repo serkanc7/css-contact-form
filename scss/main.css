@@ -1,0 +1,134 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact {
+  background-image: linear-gradient(175deg, #F7F6F2, #C8C6C6 50%, #4B6587 50%, #cfe4f8 100%);
+  min-height: 100vh;
+  padding: 100px 150px;
+}
+
+@media only screen and (max-width: 1239px) {
+  .contact {
+    padding: 75px 100px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .contact {
+    padding: 50px 50px;
+  }
+}
+
+@media only screen and (max-width: 379px) {
+  .contact {
+    padding: 25px 25px;
+  }
+}
+
+.contact__title {
+  text-transform: uppercase;
+  text-align: center;
+  color: #4d4b4b;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.contact__paragraph {
+  margin: 20px 0;
+  line-height: 1.5;
+}
+
+.form {
+  margin-top: 50px;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  -webkit-box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 767px) {
+  .form {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.form__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form__group--full {
+  grid-column: 1/-1;
+}
+
+.form__label {
+  margin-bottom: 5px;
+}
+
+.form__input {
+  border: none;
+  outline: none;
+  background-color: #ececec;
+  padding: 12px;
+  border-radius: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.form__input:focus {
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+}
+
+.form__input--textarea {
+  resize: none;
+  min-height: 100px;
+}
+
+.form__button-group {
+  grid-column: 1/-1;
+}
+
+.form__button {
+  float: right;
+  border: none;
+  padding: 10px;
+  background: #4B6587;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.form__button:hover {
+  background-color: #395170;
+}
+/*# sourceMappingURL=main.css.map */

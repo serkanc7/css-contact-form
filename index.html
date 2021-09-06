@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact the team!</title>
+    <link rel="stylesheet" href="scss/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <section class="contact">
+            <h1 class="contact__title">Contact the team!</h1>
+            <p class="contact__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil id illo
+                recusandae in, blanditiis magnam
+                possimus tempore, laboriosam magni atque reprehenderit aliquid. Dolor autem fugiat eum nam rem iure ad!
+            </p>
+            <form class="form">
+                <div class="form__group">
+                    <label class="form__label" for="firstname">First name*</label>
+                    <input type="text" name="firstname" id="firstname" class="form__input" required>
+                </div>
+                <div class="form__group">
+                    <label class="form__label" for="lastname">Last name*</label>
+                    <input type="text" name="lastname" id="lastname" class="form__input" required>
+                </div>
+                <div class="form__group">
+                    <label class="form__label" for="email">Email adress*</label>
+                    <input type="email" name="email" id="email" class="form__input" required>
+                </div>
+                <div class="form__group">
+                    <label class="form__label" for="company">Company</label>
+                    <input type="text" name="company" id="company" class="form__input">
+                </div>
+                <div class="form__group form__group--full">
+                    <label class="form__label" for="message">What are you looking for?</label>
+                    <textarea name="message" id="message" class="form__input form__input--textarea"></textarea>
+                </div>
+                <div class="form__button-group">
+                    <input class="form__button" type="submit" value="Send Message">
+                </div>
+
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
